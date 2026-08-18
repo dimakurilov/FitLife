@@ -19,3 +19,4 @@ else:
 
 print(f"{name}, ваш индекс массы тела: {bmi:.2f}")
 print(f"Категория: {category}")
+
