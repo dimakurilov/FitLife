@@ -14,11 +14,17 @@ def run_program():
         sys.stdout = io.StringIO()
         
         try:
+            # Импортируем и выполняем код
             import fit_life
+            # Если есть функция main - вызываем её
             if hasattr(fit_life, 'main'):
                 fit_life.main()
+            # Получаем вывод
             output = sys.stdout.getvalue()
             yield output
+        except Exception as e:
+            # Если ошибка - передаем её в тест
+            yield str(e)
         finally:
             sys.stdin = old_stdin
             sys.stdout = old_stdout
