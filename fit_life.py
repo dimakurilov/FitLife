@@ -11,3 +11,4 @@ water_intake = (weight * 30) / 1000
 
 print(f"{name}, ваш индекс массы тела: {bmi}")
 print(f"{name}, рекомендуемая норма воды для вас (л/день): {water_intake}.")
+
