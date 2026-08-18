@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 """
 Основные тесты функциональности FitLife
 """
@@ -56,7 +55,6 @@ def test_input_and_output(monkeypatch, capsys):
     assert '23.0' in output or '23' in output, "ИМТ не выведен или неверный"
     assert 'л. в день' in output, "Норма воды не выведена"
     assert 'Будьте здоровы' in output, "Финальное сообщение отсутствует"
-=======
 import ast
 import re
 
@@ -165,4 +163,3 @@ def test_6_result(run_program):
         "Неверно рассчитана норма воды. "
         "Для веса 75.5 кг должно получиться около 2.265 л."
     )
->>>>>>> 4c93f03424e5aaf78d76f566ff305e0f7cec4073
