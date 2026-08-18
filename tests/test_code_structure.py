@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 Тесты для проверки структуры кода
 """
@@ -50,3 +51,21 @@ def test_has_if_main(main_file):
         content = f.read()
     
     assert '__name__ == "__main__"' in content, "Отсутствует блок if __name__ == '__main__'"
+=======
+def test_1_fit_life_exists(file_path):
+    assert file_path.exists(), (
+        "Не найден файл `fit_life.py`.\n"
+        "Проверьте, что основной файл проекта называется `fit_life.py` "
+        "и находится в корне проекта."
+    )
+
+
+def test_2_syntax_errors(source_code):
+    try:
+        compile(source_code, "fit_life.py", "exec")
+    except SyntaxError as error:
+        raise AssertionError(
+            "В коде обнаружена синтаксическая ошибка.\n"
+            f"{error.__class__.__name__}: {error}"
+        )
+>>>>>>> 4c93f03424e5aaf78d76f566ff305e0f7cec4073
