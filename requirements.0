@@ -1,0 +1,3 @@
+# Быстрое создание через echo
+echo "pytest==7.4.0" > requirements.txt
+echo "flake8==6.0.0" >> requirements.txt
