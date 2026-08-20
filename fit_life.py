@@ -1,6 +1,8 @@
 """FitLife - приложение для учёта физической активности."""
 
-user_name = input("Введите ваше имя: ")
+user_name = input("Введите ваше имя: ").strip()
+while not user_name:
+    user_name = input("Имя не может быть пустым! Введите имя: ").strip()
 age = int(input("Введите ваш возраст: "))
 user_weight = float(input("Введите ваш вес (кг): "))
 user_height = float(input("Введите ваш рост (м): "))
