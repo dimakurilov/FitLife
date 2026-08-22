@@ -32,5 +32,5 @@ print(f"Ваш возраст: {age} {age_word}")
 print(f"Ваш индекс массы тела: {bmi}")
 print(
     f"{user_name}, рекомендуемая норма воды для вас (л/день): "
-    f"{water_intake:.2f}."
+    f"{water_intake:.2f}.",
 )
